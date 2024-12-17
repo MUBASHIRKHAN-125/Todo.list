@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="text">
+    <span class="element"></span>
+    </div>
+    <div class="manicontainer">
+        <div class="inpbut">
+            <div id="inp">
+            <input type="text" id="inputtodo" placeholder="Enter your text...">
+            </div>
+            <div class="but">
+            <button onclick="todosubmit()">Click Here</button>
+        </div>
+    </div>
+        <div class="cardtodo">
+            <ul id="ulTodoList">
+
+            </ul>
+        </div>
+    </div>
+    <div class="reset">
+        <button onclick="reset()">Reset</button>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>    
+    <script src="script.js"></script>
+</body>
+</html>

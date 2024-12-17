@@ -1,0 +1,85 @@
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+    background-image: linear-gradient(to right bottom, rgb(67, 67, 255) ,rgb(120, 66, 247) ,rgb(248, 122, 122) , rgb(198, 152, 66) , rgb(133, 49, 49));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html{
+    font-size: 10px;
+}
+.text{
+    text-align: center;
+    font-size: 3.5rem;
+    color:white;
+}
+.manicontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:60px;
+}
+input{
+  width: 230px;
+  height: 30px;
+  border: 3px solid purple;
+  font-size: 1.9rem;
+ 
+}
+input::placeholder{
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+.inpbut {
+    display: flex;
+    border: 3px solid white;
+    border-radius: 4px;
+
+}
+.but button{
+    height: 38px;
+    border: 2px solid purple;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.cardtodo {
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 3px solid white;
+    width:314px;
+    background-color: #7430e77d;
+    min-height: 300px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+.cardtodo:hover{
+    box-shadow: 1px 1px 10px black;
+}
+#ulTodoList{
+   
+   margin-right: 20px;
+   margin-left: 20px;
+   font-size: 2rem;
+   /* list-style: decimal; */
+}
+.reset{
+    text-align: center;
+    margin-top: 10px;
+}
+.reset button{
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+.reset button:hover{
+    box-shadow: 1px 1px 10px black;
+    transform: scale(1.1);
+}
