@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif ;
-    background-image: linear-gradient(to right bottom, rgb(67, 67, 255) ,rgb(120, 66, 247) ,rgb(248, 122, 122) , rgb(198, 152, 66) , rgb(133, 49, 49));
+    background-image: linear-gradient(to right bottom, rgba(2,0,36,1) 0%, rgb(76, 76, 240) 35%, rgb(55, 156, 176) 100%);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,8 +46,8 @@ input::placeholder{
 .cardtodo {
     margin-top: 5px;
     border-radius: 3px;
-    border: 3px solid white;
-    width:314px;
+    border: 5px solid white;
+   min-width:314px;
     background-color: #7430e77d;
     min-height: 300px;
     transition-property: all;
@@ -59,11 +59,15 @@ input::placeholder{
     box-shadow: 1px 1px 10px black;
 }
 #ulTodoList{
-   
-   margin-right: 20px;
-   margin-left: 20px;
    font-size: 2rem;
-   /* list-style: decimal; */
+    list-style: none;
+}
+#ulTodoList li{
+border: 2px solid rgb(12 60 116);
+color: white;
+}
+.list{
+    cursor: pointer;
 }
 .reset{
     text-align: center;
