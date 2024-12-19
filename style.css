@@ -63,10 +63,11 @@ input::placeholder{
     list-style: none;
 }
 #ulTodoList li{
-border: 2px solid rgb(12 60 116);
+border: 2px solid rgb(39, 88, 145);
+background-color: black;
 color: white;
 }
-.list{
+#ulTodoList li i{
     cursor: pointer;
 }
 .reset{
