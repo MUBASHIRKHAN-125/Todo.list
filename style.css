@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     font-family: Arial, Helvetica, sans-serif ;
     background-image: linear-gradient(to right bottom, rgba(2,0,36,1) 0%, rgb(76, 76, 240) 35%, rgb(55, 156, 176) 100%);
@@ -20,7 +24,7 @@ html{
     margin-top:60px;
 }
 input{
-  width: 230px;
+  width: 244px;
   height: 30px;
   border: 3px solid purple;
   font-size: 1.9rem;
@@ -61,10 +65,9 @@ input::placeholder{
 #ulTodoList{
    font-size: 2rem;
     list-style: none;
-    padding-left: 0px;
 }
 #ulTodoList li{
-    border: 2px solid rgb(39, 88, 145);
+    border: 5px solid rgb(39, 88, 145);
     background-color: black;
     color: white;
     display: flex;
