@@ -20,7 +20,7 @@ function todosubmit(){
     print();
 }
 function para(){
-    newArray.splice(0 , 1);
+    newArray.pop();
     print();
 }
 function reset(){

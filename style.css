@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body{
     font-family: Arial, Helvetica, sans-serif ;
@@ -25,7 +26,7 @@ html{
 }
 input{
   width: 244px;
-  height: 30px;
+  height: 39px;
   border: 3px solid purple;
   font-size: 1.9rem;
  
@@ -73,6 +74,7 @@ input::placeholder{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 8px 0px;
 }
 #ulTodoList li i{
     cursor: pointer;
@@ -95,3 +97,12 @@ input::placeholder{
     box-shadow: 1px 1px 10px black;
     transform: scale(1.1);
 }
+.list i{
+    color: red;
+    margin-right: 6px;
+    transform: scale(1.1);
+} 
+.list{ 
+    background-color:transparent; 
+    border: none;
+ }
