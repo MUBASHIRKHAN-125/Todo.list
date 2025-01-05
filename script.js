@@ -28,6 +28,9 @@ function reset(){
     document.getElementById("ulTodoList").innerHTML = li = "";
     document.getElementById("inputtodo").value = "";
 }
+const clearInput = () => {
+    document.getElementById("inputtodo").value = "";
+}
 const typed = new Typed('.element', {
     strings: ["Welcome to Todo List Web Page..." , "MK Writer!"],
     typeSpeed: 80,

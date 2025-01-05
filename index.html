@@ -15,9 +15,15 @@
         <div class="inpbut">
             <div id="inp">
             <input type="text" id="inputtodo" placeholder="Enter your text...">
+            <div onclick="clearInput()" class="iconn">
+            <i class="fa-solid fa-xmark"></i>
+             </div>
             </div>
             <div class="but">
             <button onclick="todosubmit()">Click Here</button>
+        </div>
+        <div class="reset">
+            <button onclick="reset()"><i class="fa-solid fa-arrow-rotate-right"></i></button>
         </div>
     </div>
         <div class="cardtodo">
@@ -25,9 +31,6 @@
 
             </ul>
         </div>
-    </div>
-    <div class="reset">
-        <button onclick="reset()">Reset</button>
     </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>    
     <script src="script.js"></script>

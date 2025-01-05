@@ -5,7 +5,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif ;
-    background-image: linear-gradient(to right bottom, rgba(2,0,36,1) 0%, rgb(76, 76, 240) 35%, rgb(55, 156, 176) 100%);
+   background-color: #606060;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +17,7 @@ html{
     text-align: center;
     font-size: 3.5rem;
     color:white;
+    margin-top: 8px;
 }
 .manicontainer {
     display: flex;
@@ -26,10 +27,10 @@ html{
 }
 input{
   width: 244px;
-  height: 39px;
-  border: 3px solid purple;
+  height: 36px;
+  border: 2px solid #403932;
   font-size: 1.9rem;
- 
+  text-align: center;
 }
 input::placeholder{
     text-align: center;
@@ -38,23 +39,18 @@ input::placeholder{
 }
 .inpbut {
     display: flex;
-    border: 3px solid white;
-    border-radius: 4px;
-
+    align-items: center;
 }
 .but button{
     height: 38px;
-    border: 2px solid purple;
+    border: 3px solid #403932;
     border-radius: 3px;
     cursor: pointer;
+    font-weight: bold;
 }
 .cardtodo {
-    margin-top: 5px;
-    border-radius: 3px;
-    border: 5px solid white;
-   min-width:314px;
-    background-color: #7430e77d;
-    min-height: 300px;
+    margin-top: 28px;
+    min-width: 500px;
     transition-property: all;
     transition-duration: 0.3s;
     transition-delay: 0.1s;
@@ -66,6 +62,7 @@ input::placeholder{
 #ulTodoList{
    font-size: 2rem;
     list-style: none;
+    text-align: center;
 }
 #ulTodoList li{
     border: 5px solid rgb(39, 88, 145);
@@ -75,17 +72,17 @@ input::placeholder{
     align-items: center;
     justify-content: space-between;
     padding: 8px 0px;
+    margin-top: 5px;
+    padding-left: 5px;
 }
 #ulTodoList li i{
     cursor: pointer;
 }
 .reset{
-    text-align: center;
-    margin-top: 10px;
+margin-left: 4px;
 }
 .reset button{
-    padding: 5px 20px;
-    font-size: 1.5rem;
+    padding: 9px 9px;
     border-radius: 5px;
     cursor: pointer;
     transition-property: all;
@@ -95,14 +92,42 @@ input::placeholder{
 }
 .reset button:hover{
     box-shadow: 1px 1px 10px black;
-    transform: scale(1.1);
-}
+   
+} 
 .list i{
     color: red;
-    margin-right: 6px;
+    padding-right: 6px;
     transform: scale(1.1);
 } 
 .list{ 
     background-color:transparent; 
     border: none;
  }
+#inp{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#inp .iconn{
+    position: absolute;
+    right: 6px;
+    transform: scale(1.4);
+    opacity: 0;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+#inp input:focus + .iconn{
+    opacity: 0.7;
+}
+@media (max-width:390px) {
+        .cardtodo {
+            min-width: 320px;
+        }
+        .text{
+           color: #c9c9c9; 
+        }
+    
+}
